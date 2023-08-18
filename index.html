@@ -9,6 +9,8 @@
     <link href="./assets/css/bootstrap-utilities.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="./assets/css/custom/style.css" rel="stylesheet" >
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <title>home</title>
 </head>
 <body>
@@ -50,25 +52,25 @@
 
     <div class="container-fluid main-container d-flex my-2 p-0">
 
-        <div class="left-side bg-primary pt-2 rounded-end">
+        <div class="left-side bg-primary pt-4 rounded-end">
 
-            <a class="btn btn-primary pt-3 w-50" data-bs-toggle="collapse" href="#gestione_utenti" role="button" aria-expanded="false" aria-controls="gestione_utenti">
+            <a class="btn text-light w-50 border-0" id="button_collapse" data-bs-toggle="collapse" data-bs-target="#gestione_utenti" role="button" aria-expanded="false" aria-controls="collapse">
                 Gestione Utenti
             </a>
             
 
             <div class="collapse" id="gestione_utenti">
-                <ul class="list-group w-75">
-                    <li class="btn-nav my-3 border-bottom pb-2">
+                <ul class="list-group w-100 bg-primary-subtle rounded-0">
+                    <li class="btn-nav my-3 border-bottom border-dark pb-2">
                         <!-- <a class="text-light" data-bs-toggle="modal" data-bs-target="#add_user"> -->
-                        <a href="./views/addUser.html" class="text-light text-decoration-none" target="myframe">
-                            <i class="bi bi-person-add me-2 fs-5 text-light"></i>Aggiungi utente
+                        <a href="./views/addUser.html" class="text-dark text-decoration-none" target="myframe">
+                            <i class="bi bi-person-add me-2 fs-5 text-dark "></i>Aggiungi utente
                         </a>
                     </li>
-                    <li class="btn-nav mb-3 border-bottom pb-2">
+                    <li class="btn-nav mb-3 border-bottom border-dark pb-2">
                         <!-- <a class="text-light" data-bs-toggle="modal" data-bs-target="#add_user"> -->
-                        <a href="./views/usersList.html" class="text-light text-decoration-none" target="myframe">
-                            <i class="bi bi-person-lines-fill me-2 fs-5 text-light ps-2"></i>Utenti Registrati
+                        <a href="./views/usersList.html" class="text-dark text-decoration-none" target="myframe">
+                            <i class="bi bi-person-lines-fill me-2 fs-5 text-dark ps-2"></i>Utenti Registrati
                         </a>
                     </li>
                 </ul>
@@ -146,6 +148,8 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/bootstrap.esm.min.js"></script>
+    <script src="./assets/js/custom/main.js"></script>
+
 
 </body>
 </html>
