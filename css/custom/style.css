@@ -1,0 +1,51 @@
+.navbar .container-lg a{
+    color: white !important;
+}
+
+.searchbar{
+    width: 50%;
+}
+
+.main-container{
+    background-color: #b7b7b733;
+    padding-left: 0;
+    height: 100vh;
+    position: relative;
+}
+
+.left-side{
+    position: sticky;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 20%;
+}
+
+.btn-nav{
+    color: #3333;
+    margin: 0 auto;
+    list-style: none;
+    font-size: 0.88rem;
+    padding-left: 15%;
+}
+
+.btn-nav img{
+    width: 20px;
+    height: auto;
+}
+
+.btn-nav:hover{
+    color: #3333;
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .searchbar{
+        width: 90%;
+    }
+    
+}

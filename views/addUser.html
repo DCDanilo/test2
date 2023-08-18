@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" >
+    <link href="../css/custom/style.css" rel="stylesheet" >
+
+    <title>Document</title>
+</head>
+<body class="p-4">
+    <form method="post" name="add_user" action="./src/user.php">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" aria-describedby="nome" name="nome">
+        </div>
+        <div class="mb-3">
+            <label for="cognome" class="form-label">Cognome</label>
+            <input type="text" class="form-control" id="cognome" aria-describedby="cognome" name="cognome">
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" class="form-control" id="email" aria-describedby="email" name="email">
+        </div>
+
+        <div class="mb-3">
+            <label for="email_confirm" class="form-label">ConfermaEmail</label>
+            <input type="text" class="form-control" id="email_confirm" aria-describedby="email_confirm" name="email_confirm">
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" name="password">
+        </div>
+
+        <div class="mb-3">
+            <label for="password_confirm" class="form-label">Conferma Password</label>
+            <input type="password" class="form-control" id="password_confirm" name="password_confirm">
+        </div>
+
+        <div class="modal-footer justify-content-center">
+            <button type="submit"  name="save" class="btn btn-success w-25">Salva</button>
+        </div>
+    </form>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.esm.min.js"></script>
+   
+</body>
+</html>

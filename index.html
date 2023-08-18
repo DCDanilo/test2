@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.min.css" rel="stylesheet" >
+    <link href="./css/custom/style.css" rel="stylesheet" >
+    <title>home</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-primary text-bg-light ">
+        <div class="container-lg d-none d-md-flex">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <form class="d-flex my-3 my-md-0 searchbar" role="search">
+
+                <button type="button" class="btn d-none d-lg-block" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">                    
+                    <span><img src="./assets/icons-1.10.5/icons/bell-fill.svg" alt=""></span>
+                </button>
+
+                <button type="button" class="btn btn d-none d-lg-block" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+                    <span><img src="./assets/icons-1.10.5/icons/envelope-fill.svg" alt=""></span>
+                </button>
+
+                <div class="input-group border rounded ms-3">
+                    <input type="search" class="form-control" placeholder="Cerca" aria-label="Search">
+                    <button class="btn btn-success" type="submit">
+                        <span><img src="./assets/icons-1.10.5/icons/search.svg" alt=""></span>
+                    </button>
+                </div>
+            </form>
+          </div>
+
+        </div>
+      </nav>
+
+    <div class="container-fluid main-container d-flex">
+
+        <div class="left-side bg-primary pt-2">
+
+            <a class="btn btn-primary pt-3 w-100" data-bs-toggle="collapse" href="#gestione_utenti" role="button" aria-expanded="false" aria-controls="gestione_utenti">
+                Gestione Utenti
+            </a>
+            
+
+            <div class="collapse" id="gestione_utenti">
+                <ul class="list-group bg-primary-subtle">
+                    <li class="btn-nav my-3">
+                        <!-- <a class="text-light" data-bs-toggle="modal" data-bs-target="#add_user"> -->
+                        <a href="./views/addUser.html" class="text-dark text-decoration-none" target="myframe">
+                            <img src="./assets/icons-1.10.5/icons/person-add.svg" alt="" class="me-2">Aggiungi utente
+                        </a>
+                    </li>
+                    <li class="btn-nav mb-3">
+                        <!-- <a class="text-light" data-bs-toggle="modal" data-bs-target="#add_user"> -->
+                        <a href="./views/usersList.html" class="text-dark text-decoration-none" target="myframe">
+                            <img src="./assets/icons-1.10.5/icons/view-list.svg" alt="" class="me-2">Utenti Registrati
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="right-side d-flex justify-content-center align-items-center w-100" id="right-side" name="right-side">
+            <iframe src="" frameborder="0" name="myframe" width="100%" height="100%">
+                
+            </iframe>
+        </div>
+
+    </div>
+
+
+    <div class="modal" tabindex="-1" id="add_user">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Aggiungi Utente</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form method="post" name="add_user" action="./src/user.php">
+                    <div class="mb-3">
+                      <label for="nome" class="form-label">Nome</label>
+                      <input type="text" class="form-control" id="nome" aria-describedby="nome" name="nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cognome" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="cognome" aria-describedby="cognome" name="cognome">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email" aria-describedby="email" name="email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email_confirm" class="form-label">ConfermaEmail</label>
+                        <input type="text" class="form-control" id="email_confirm" aria-describedby="email_confirm" name="email_confirm">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password" name="password">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password_confirm" class="form-label">Conferma Password</label>
+                        <input type="password" class="form-control" id="password_confirm" name="password_confirm">
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                    <input type="submit"  name="save" class="btn btn-success w-25">Salva</button>
+                    </div>
+                </form>
+            </div>
+          
+          </div>
+        </div>
+    </div>
+
+
+
+ 
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.esm.min.js"></script>
+
+</body>
+</html>
