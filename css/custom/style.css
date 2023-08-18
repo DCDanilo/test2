@@ -20,7 +20,6 @@ body{
     position: sticky;
     top:0;
     left: 0;
-    height: 80%;
     width: 20%;
 }
 
@@ -29,7 +28,6 @@ body{
     margin: 0 auto;
     list-style: none;
     font-size: 0.88rem;
-    padding-left: 15%;
 }
 
 .btn-nav img{
@@ -40,6 +38,10 @@ body{
 .btn-nav:hover{
     color: #3333;
     cursor: pointer;
+}
+
+footer{
+    height: 100px;
 }
 
 
