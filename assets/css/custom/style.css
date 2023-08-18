@@ -10,6 +10,16 @@ body{
     width: 40%;
 }
 
+.bi{
+    color: #ffff;
+}
+
+.bi-bell-fill,
+.bi-envelope-fill,
+.bi-person-circle{
+    font-size: 1.2rem;
+}
+
 .main-container{
     padding-left: 0;
     height: 100vh;
