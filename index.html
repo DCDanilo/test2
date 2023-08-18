@@ -10,22 +10,23 @@
 <body>
 
     <nav class="navbar navbar-expand-lg bg-primary text-bg-light ">
-        <div class="container-lg d-none d-md-flex">
+        <div class="container-fluid d-none d-md-flex">
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+            <button type="button" class="btn d-none d-lg-block" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">                    
+                <span><img src="./assets/icons-1.10.5/icons/bell-fill.svg" alt=""></span>
+            </button>
+
+            <button type="button" class="btn btn d-none d-lg-block" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+                <span><img src="./assets/icons-1.10.5/icons/envelope-fill.svg" alt=""></span>
+            </button>
+
             <form class="d-flex my-3 my-md-0 searchbar" role="search">
-
-                <button type="button" class="btn d-none d-lg-block" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">                    
-                    <span><img src="./assets/icons-1.10.5/icons/bell-fill.svg" alt=""></span>
-                </button>
-
-                <button type="button" class="btn btn d-none d-lg-block" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
-                    <span><img src="./assets/icons-1.10.5/icons/envelope-fill.svg" alt=""></span>
-                </button>
 
                 <div class="input-group border rounded ms-3">
                     <input type="search" class="form-control" placeholder="Cerca" aria-label="Search">
@@ -34,14 +35,18 @@
                     </button>
                 </div>
             </form>
+
+            <button type="button" class="btn btn d-none d-lg-block ms-4 me-2" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+                <span><img src="./assets/icons-1.10.5/icons/envelope-fill.svg" alt=""></span>
+            </button>
           </div>
 
         </div>
       </nav>
 
-    <div class="container-fluid main-container d-flex">
+    <div class="container-fluid main-container d-flex mt-2">
 
-        <div class="left-side bg-primary pt-2">
+        <div class="left-side bg-primary pt-2 rounded-end">
 
             <a class="btn btn-primary pt-3 w-100" data-bs-toggle="collapse" href="#gestione_utenti" role="button" aria-expanded="false" aria-controls="gestione_utenti">
                 Gestione Utenti
@@ -74,6 +79,14 @@
         </div>
 
     </div>
+
+    <footer class="container-fluid border-1 bg-primary-subtle">
+        <div class="container-fluid border-1 bg-primary-subtle">
+            <p>
+                copirigth &copy; Danilo
+            </p>
+        </div>
+    </footer>
 
 
     <div class="modal" tabindex="-1" id="add_user">

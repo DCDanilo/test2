@@ -1,13 +1,16 @@
-.navbar .container-lg a{
+body{
+    background-color: #b7b7b733
+}
+
+.navbar .container-fluid a{
     color: white !important;
 }
 
 .searchbar{
-    width: 50%;
+    width: 40%;
 }
 
 .main-container{
-    background-color: #b7b7b733;
     padding-left: 0;
     height: 100vh;
     position: relative;
@@ -17,7 +20,7 @@
     position: sticky;
     top:0;
     left: 0;
-    height: 100%;
+    height: 80%;
     width: 20%;
 }
 
