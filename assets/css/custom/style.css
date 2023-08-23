@@ -13,6 +13,9 @@ body{
 .bi{
     color: #ffff;
 }
+.btn:active{
+    border-color: transparent !important;
+}
 
 .bi-bell-fill,
 .bi-envelope-fill,
