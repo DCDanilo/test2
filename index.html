@@ -15,196 +15,42 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-primary text-bg-light px-2 d-none d-lg-flex">
-        <div class="container-fluid d-none d-md-flex">
-          <a class="navbar-brand" href="#">Gestionale</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-
-            <button type="button" class="btn d-none d-lg-block" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">                    
-                <span><i class="bi bi-bell-fill"></i></span>
-                <span class="ms-1 text-light">2</span>
-            </button>
-
-            <button type="button" class="btn btn d-none d-lg-block" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
-                <span><i class="bi bi-envelope-fill"></i></span>
-                <span class="ms-1 text-light">1</span>
-            </button>
-
-            <form class="d-flex my-3 my-md-0 searchbar" role="search">
-
-                <div class="input-group border rounded ms-3">
-                    <input type="search" class="form-control" placeholder="Cerca" aria-label="Search">
-                    <button class="btn btn-success" type="submit">
-                    <span><i class="bi bi-search"></i></span>
-                    </button>
-                </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
-
-            <button type="button" class="btn btn d-none d-lg-block ms-4" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
-                <span><i class="bi bi-person-circle"></i></span>
-            </button>
           </div>
-
         </div>
       </nav>
-
-    <div class="container-fluid main-container d-flex my-2 p-0">
-
-        <div class="left-side bg-primary rounded-end pt-2">
-            <!-- box gestione utenti -->
-            <!--<div class="mt-4">
-                <a class="btn text-light w-100 border-0" id="button_collapse" data-bs-toggle="collapse" data-bs-target="#gestione_utenti" role="button" aria-expanded="false" aria-controls="collapse">
-                    Gestione Utenti
-                </a>                
-    
-                <div class="collapse mt-1" id="gestione_utenti">
-                    <ul class="list-group w-100 bg-primary-subtle rounded-0">
-                        <li class="btn-nav my-3 border-bottom border-dark pb-2">
-                            <a class="text-light" data-bs-toggle="modal" data-bs-target="#add_user"> 
-                            <a href="./views/addUser.html" class="text-dark text-decoration-none" target="myframe">
-                                <i class="bi bi-person-add me-2 fs-5 text-dark ps-2"></i>Aggiungi utente
-                            </a>
-                        </li>
-                        <li class="btn-nav mb-3 border-bottom border-dark pb-2">
-                            <a class="text-light" data-bs-toggle="modal" data-bs-target="#add_user"> 
-                            <a href="./views/usersList.html" class="text-dark text-decoration-none" target="myframe">
-                                <i class="bi bi-person-lines-fill me-2 fs-5 text-dark ps-2"></i>Utenti Registrati
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>-->
-            <!-- fine box gestione utenti -->
-             
-            <!-- box gestione EPC -->
-            <div class="mb-4">
-                <a class="btn text-light w-100 border-0 " id="button_collapse" data-bs-toggle="collapse" data-bs-target="#epc" role="button" aria-expanded="false" aria-controls="collapse">
-                    EPC
-                </a>
-                
-    
-                <div class="collapse mt-1" id="epc">
-                    <ul class="list-group w-100 bg-primary-subtle rounded-0 py-3">               
-                        <li class="btn-nav border-bottom border-dark pb-1 w-50 mx-auto">
-                            <a href="./views/usersList.html" class="text-dark text-decoration-none" target="myframe">
-                                <i class="bi bi-plus-circle-fill me-2 fs-6 text-dark"></i>Aggiungi EPC
-                            </a>
-                        </li>
-
-                        <li class="btn-nav border-bottom border-dark pb-1 w-50 mx-auto mt-2">
-                            <a href="./views/usersList.html" class="text-dark text-decoration-none" target="myframe">
-                                <i class="bi bi-list me-2 fs-6 text-dark"></i>EPC Assegnate
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-             <!-- fine box gestione EPC -->
-             
-             <!-- Restituzione Documenti -->
-
-             <div class="mb-4">
-                <a class="btn text-light w-100 border-0 " id="button_collapse" data-bs-toggle="collapse" data-bs-target="#restituzione" role="button" aria-expanded="false" aria-controls="collapse">
-                    Restituzione Documentale
-                </a>
-                
-    
-                <div class="collapse mt-1" id="restituzione">
-                    <ul class="list-group w-100 bg-primary-subtle rounded-0 py-3">               
-                        <li class="btn-nav border-bottom border-dark pb-1 w-50 mx-auto">
-                            <a href="./views/usersList.html" class="text-dark text-decoration-none" target="myframe">
-                                <i class="bi bi-person-lines-fill fs-6 text-dark"></i>Anagrafica Utenti
-                            </a>
-                        </li>
-
-
-                        <li class="btn-nav border-bottom border-dark pb-1 w-50 mx-auto mt-2">
-                            <a href="./views/usersList.html" class="text-dark text-decoration-none" target="myframe">
-                                <i class="bi bi-list me-2 fs-6 text-dark"></i>Lista Restituzioni
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <!-- Fine Restituzione Documenti -->
-
-
-        </div>
-
-       
-
-        <div class="right-side d-flex justify-content-center align-items-center w-100" id="right-side" name="right-side">
-            <iframe src="" frameborder="0" name="myframe" width="100%" height="100%">
-                
-            </iframe>
-        </div>
-
-    </div>
-
-    <footer class="container-fluid border-1 bg-primary-subtle d-flex justify-content-center align-items-center">
-        <p class="m-0">
-            Copyright &copy; Danilo - 2023
-        </p>
-
-    </footer>
-
-
-    <div class="modal" tabindex="-1" id="add_user">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Aggiungi Utente</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form method="post" name="add_user" action="./src/user.php">
-                    <div class="mb-3">
-                      <label for="nome" class="form-label">Nome</label>
-                      <input type="text" class="form-control" id="nome" aria-describedby="nome" name="nome">
-                    </div>
-                    <div class="mb-3">
-                        <label for="cognome" class="form-label">Cognome</label>
-                        <input type="text" class="form-control" id="cognome" aria-describedby="cognome" name="cognome">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="email" aria-describedby="email" name="email">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="email_confirm" class="form-label">ConfermaEmail</label>
-                        <input type="text" class="form-control" id="email_confirm" aria-describedby="email_confirm" name="email_confirm">
-                    </div>
-
-                    <div class="mb-3">
-                      <label for="password" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="password" name="password">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="password_confirm" class="form-label">Conferma Password</label>
-                        <input type="password" class="form-control" id="password_confirm" name="password_confirm">
-                    </div>
-
-                    <div class="modal-footer justify-content-center">
-                    <input type="submit"  name="save" class="btn btn-success w-25">Salva</button>
-                    </div>
-                </form>
-            </div>
-          
-          </div>
-        </div>
-    </div>
-
 
 
  
